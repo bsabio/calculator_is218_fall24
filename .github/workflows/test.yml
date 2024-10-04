@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-cov pylint
+        pip install -r requirements.txt
 
     - name: Run pytest with coverage
       run: pytest --cov=your_package_name tests/  # Replace 'your_package_name' with your module
